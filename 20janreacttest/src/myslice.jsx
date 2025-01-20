@@ -5,6 +5,7 @@ const myslice=createSlice({
    color:"red",
    square: 0,
     cube: 0,
+    count:0
 
 
     },
