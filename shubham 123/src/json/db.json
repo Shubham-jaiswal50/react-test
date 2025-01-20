@@ -1,0 +1,50 @@
+{
+    "cars": [
+        {
+          "id": "1",
+          
+          "name": "shubham",
+          "designation": "software developer",
+          "department": "frontend",
+          
+          "salary":"40000"
+
+
+         
+        },
+        {
+          "id": "2",
+          
+          "name": "rahul",
+          "designation": "software developer",
+          "department": "backend",
+          
+          "salary":"80000"
+
+
+         
+        },{
+          "id": "3",
+          
+          "name": "tanu",
+          "designation": "software developer",
+          "department": "frontend",
+          
+          "salary":"40000"
+
+
+         
+        }, {
+          "id": "4",
+          
+          "name": "neha",
+          "designation": "software developer",
+          "department": "frontend",
+          
+          "salary":"60000"
+
+
+         
+        }
+      ]
+}
