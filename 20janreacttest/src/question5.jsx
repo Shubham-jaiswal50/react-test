@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Question5=()=>{
 
     const [mydata,setmydata]=useState([]);
-    const Question5=()=>{
+    const loadData=()=>{
          let api="http://localhost:3000/attendence";
         axios.get(api).then((res)=>{
             setmydata(res.data);
