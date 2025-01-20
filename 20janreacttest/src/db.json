@@ -1,0 +1,33 @@
+{
+    "attendence": [
+      {
+        "empid": 1,
+        "name": "John Doe",
+        "designation": "Software Engineer",
+        "department": "Development",
+        "salary": 60000
+      },
+      {
+        "empid": 2,
+        "name": "Jane Smith",
+        "designation": "QA Engineer",
+        "department": "Testing",
+        "salary": 55000
+      },
+      {
+        "empid": 3,
+        "name": "Mike Johnson",
+        "designation": "Project Manager",
+        "department": "Management",
+        "salary": 75000
+      },
+      {
+        "empid": 4,
+        "name": "Emily Davis",
+        "designation": "HR Specialist",
+        "department": "Human Resources",
+        "salary": 50000
+      }
+    ]
+  }
+  

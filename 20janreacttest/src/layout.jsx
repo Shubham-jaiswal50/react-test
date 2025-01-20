@@ -8,6 +8,7 @@ const Layout=()=>{
         <Link to="question2">Question2 |</Link>
         <Link to="question3">Question3 |</Link>
         <Link to="question4">Question4</Link>
+        <Link to="question5">Question5</Link>
 
         <Outlet/>
         </>
