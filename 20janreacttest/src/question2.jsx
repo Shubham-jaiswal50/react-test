@@ -1,25 +1,33 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { cube1, square1 } from "./myslice";
 
 const Question2 = () => {
-  const [square, setsquare] = useState(0);
-  const [cube, setcube] = useState(0);
+  const dispatch = useDispatch();
 
-  const Square = (num) => {
-    setsquare(num * num);
-  };
+  
+  const square = useSelector((state) => state.mytest.square);
+  const cube = useSelector((state) => state.mytest.cube);
 
-  const Cube = (num) => {
-    setcube(num * num * num);
+  
+  const [inputValue, setInputValue] = useState(5);
+
+
+  const calculate = () => {
+    dispatch(square1(inputValue)); 
+    dispatch(cube1(inputValue));   
   };
 
   return (
     <>
-      <h1>The square is 5= {square}</h1>
-      <h1>The cube is 5= {cube}</h1>
-      <button onClick={() => Square(5)}>Square</button>
-      <br />
-      <br />
-      <button onClick={() => Cube(5)}>Cube</button>
+      <h1>The square of {inputValue} is: {square}</h1>
+      <h1>The cube of {inputValue} is: {cube}</h1>
+      <input
+        type="number"
+        value={inputValue}
+        onChange={(e) => setInputValue(Number(e.target.value))} 
+      />
+      <button onClick={calculate}>Calculate</button>
       <br />
       <br />
     </>
